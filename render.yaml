@@ -1,0 +1,65 @@
+# =============================================================================
+# MANIFIESTO DE INFRAESTRUCTURA COMO CÓDIGO (IaC) - RENDER
+# Monorepo: Backend FastAPI (API REST) + Analytics (Streamlit Dashboard)
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # 1. SERVICIO BACKEND: FastAPI REST API & Swagger UI
+  # ---------------------------------------------------------------------------
+  - type: web
+    name: api-delitos-sexuales-atlantico
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: ENVIRONMENT
+        value: production
+      - key: PORT
+        value: 10000
+      - key: DATASET_CLEAN_PATH
+        value: docs/data_set/delitos_sexuales_atlantico_limpio.csv
+      - key: FECHA_DESCARGA_DATASET
+        value: "2026-11-06"
+      - key: DEPARTAMENTO_OBJETIVO
+        value: "ATLÁNTICO"
+      # Cadena de conexión Supabase (Pooler IPv4 en puerto 6543)
+      - key: DATABASE_URL
+        sync: false
+      - key: DATABASE_URL_POOLER
+        sync: false
+
+  # ---------------------------------------------------------------------------
+  # 2. SERVICIO ANALYTICS: Streamlit EDA & Dashboard Estadístico
+  # ---------------------------------------------------------------------------
+  - type: web
+    name: analytics-delitos-sexuales-atlantico
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r analytics/requirements.txt
+    startCommand: streamlit run analytics/app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true --browser.gatherUsageStats false
+    healthCheckPath: /_stcore/health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: ENVIRONMENT
+        value: production
+      - key: STREAMLIT_SERVER_HEADLESS
+        value: "true"
+      - key: STREAMLIT_SERVER_ENABLE_CORS
+        value: "false"
+      - key: STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION
+        value: "false"
+      # Cadena de conexión Supabase para consulta directa en Streamlit
+      - key: DATABASE_URL_POOLER
+        sync: false
+      - key: DATABASE_URL
+        sync: false
