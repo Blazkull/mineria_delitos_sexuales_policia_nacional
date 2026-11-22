@@ -52,3 +52,11 @@ frontend/.vite/
 # Power BI backups / temp
 *.tmp
 *.pbix.bak
+
+# Archivos Comprimidos y Entregables Locales
+*.zip
+*.tar.gz
+*.rar
+proyecto_mineria_python/
+entrega_proyecto_mineria_python/
+

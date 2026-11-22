@@ -21,6 +21,8 @@ gotrue>=2.4.0
 # API & Web Framework
 fastapi>=0.110.0
 uvicorn[standard]>=0.28.0
+watchfiles>=1.0.0
+python-multipart>=0.0.9
 pydantic>=2.6.4
 pydantic-settings>=2.2.1
 
