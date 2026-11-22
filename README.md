@@ -68,10 +68,12 @@ mineria_delitos_sexuales_policia_nacional/
 │   │   ├── supabase_ddl.sql              # Script SQL DDL listo para Supabase / Neon
 │   │   └── DATABASE_SCHEMA.md            # Diccionario de datos de la base de datos
 │   ├── powerbi/
+│   │   ├── dashboard_delitos_sexuales_atlantico.pbix # Tablero interactivo Power BI (.pbix)
 │   │   ├── ESPECIFICACION_POWERBI.md     # Especificación visual, visuales, páginas y DAX
 │   │   └── POWERBI_GUIDE.md              # Código M para Power Query y conexión Web
-│   ├── paper/
-│   │   └── PLAN_ARTICULO.md              # Esquema para el artículo de 4.000 palabras (APA 7)
+│   ├── Articulo cientifico/              # Entregable académico en formato Word (.docx)
+│   │   ├── Minería de datos enfocada a la caracterización de cifras en torno a delitos sexuales en el departamento del Atlántico Colombia .docx
+│   │   └── PLANTILLA.docx
 │   ├── data_set/                         # Datasets crudos y limpios
 │   │   ├── Reporte__Delitos_sexuales_Policía_Nacional_20261106.csv # Original (405,193 filas)
 │   │   └── delitos_sexuales_atlantico_limpio.csv                  # Limpio (16,664 filas)
@@ -189,6 +191,8 @@ cd analytics
 
 ## 📑 6. Índice de Documentación Detallada
 
+- 📊 **Tablero Interactivo Power BI (.pbix):** [docs/powerbi/dashboard_delitos_sexuales_atlantico.pbix](docs/powerbi/dashboard_delitos_sexuales_atlantico.pbix)
+- 📝 **Artículo Científico en Word (.docx):** [docs/Articulo cientifico/](docs/Articulo%20cientifico/)
 - 📘 **Guía Maestra para Nuevos Desarrolladores:** [docs/GUIA_COMPLETA_DEL_PROYECTO.md](docs/GUIA_COMPLETA_DEL_PROYECTO.md)
 - 📋 **Control de Tareas y Fases:** [docs/tasks/MASTER_STATUS.md](docs/tasks/MASTER_STATUS.md)
 - 📊 **Especificación Completa de Power BI:** [docs/powerbi/ESPECIFICACION_POWERBI.md](docs/powerbi/ESPECIFICACION_POWERBI.md)

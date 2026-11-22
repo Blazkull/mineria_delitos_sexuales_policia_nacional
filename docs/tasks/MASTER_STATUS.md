@@ -10,10 +10,10 @@
 - [x] **Fase 2: Arquitectura de Base de Datos (PostgreSQL en Supabase)** — *(Completado: Conexión validada con Supabase Pooler en puerto 6543, tabla creada sin ID, 8 índices B-tree creados, Row Level Security (RLS) habilitado con políticas de lectura pública y escritura restringida, y los 16,664 registros limpios cargados exitosamente)*
 - [x] **Fase 3: Backend API REST (FastAPI) & Swagger Multidimensional** — *(Entorno `.venv` configurado, modelos ORM, esquemas Pydantic v2, filtros avanzados por fecha, ley, municipio, edad, endpoints `/delitos/filtros/opciones` y `/delitos/powerbi/dataset`, manifiesto `render.yaml` listo)*
 - [x] **Fase 4: Análisis Exploratorio de Datos (EDA) en Streamlit** — *(Aplicación interactiva `analytics/app.py` lista con 6 pestañas analíticas, filtros dinámicos, Plotly y descarga CSV)*
-- [x] **Fase 5: Especificación y Modelado para Power BI (`.pbix`)** — *(Especificación completa en `docs/powerbi/ESPECIFICACION_POWERBI.md` con 5 páginas detalladas, catálogo DAX, guía de conexión Web M y esquema en estrella)*
+- [x] **Fase 5: Especificación y Modelado para Power BI (`.pbix`)** — *(Completado: Archivo `dashboard_delitos_sexuales_atlantico.pbix` integrado en el repositorio junto con su especificación técnica y código M)*
 - [x] **Fase 6: Portal Web de Documentación (React + Tailwind) & Buenas Prácticas** — *(Portal React 18 + Vite + Tailwind CSS completado con diseño de alta gama sin emojis, diagramas interactivos de Mermaid, consola de pruebas en vivo, catálogo de endpoints, guía de handoff para Power BI y soporte para Vercel)*
 - [x] **Fase 7: Despliegue en Render (Multi-Servicio) y Carga a Supabase** — *(Carga batch de 16,664 registros limpios en Supabase con RLS activo; configuración de infraestructura `render.yaml` multi-servicio lista para FastAPI y Streamlit)*
-- [ ] **Fase 8: Redacción del Artículo Científico (Formato Word)** — *(Plan estructurado en `docs/paper/PLAN_ARTICULO.md`. Pendiente redacción de las ≥4.000 palabras bajo normas APA 7ª ed. cuando se dispongan las evidencias)*
+- [x] **Fase 8: Redacción del Artículo Científico (Formato Word)** — *(Completado: Documento Word `Minería de datos enfocada a la caracterización de cifras en torno a delitos sexuales en el departamento del Atlántico Colombia .docx` incorporado en `docs/Articulo cientifico/`)*
 
 ---
 
