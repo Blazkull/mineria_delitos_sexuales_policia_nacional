@@ -1,5 +1,6 @@
 # 🛡️ Minería de Datos y Analítica Predictiva: Delitos Sexuales en el Departamento del Atlántico (2010–2026)
 
+> **Desarrollado por:** Jhoan Acosta & Rafael Jimenez  
 > **Asignatura:** Minería de Datos | **Entrega Final:** 23 de Noviembre de 2026  
 > **Fuente Oficial de Datos:** Policía Nacional de Colombia — Portal Nacional de Datos Abiertos (`datos.gov.co`)  
 > **Fecha de Descarga Oficial:** **2026-11-06**  
@@ -201,3 +202,13 @@ cd analytics
 - 📡 **Catálogo Completo de Endpoints REST:** [docs/documentacion/03_CATALOGO_ENDPOINTS_API.md](docs/documentacion/03_CATALOGO_ENDPOINTS_API.md)
 - 🔄 **Flujo de Arquitectura y Procesos:** [docs/documentacion/04_FLUJO_ARQUITECTURA_Y_PROCESOS.md](docs/documentacion/04_FLUJO_ARQUITECTURA_Y_PROCESOS.md)
 - 🛡️ **Estandarización y Buenas Prácticas:** [docs/documentacion/05_ESTANDARIZACION_Y_BUENAS_PRACTICAS.md](docs/documentacion/05_ESTANDARIZACION_Y_BUENAS_PRACTICAS.md)
+
+---
+
+## 👥 7. Desarrolladores y Autores del Proyecto
+
+* **Jhoan Acosta**
+* **Rafael Jimenez**
+
+*Proyecto de Investigación y Minería de Datos — Universidad / Policía Nacional de Colombia (2026).*
+
